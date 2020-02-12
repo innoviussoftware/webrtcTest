@@ -19,6 +19,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -34,5 +39,6 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:1.1.3"
 
     //implementation 'com.github.innoviussoftware:webrtcTest:1.0.0'
-    compile 'com.github.jitpack:gradle-simple:1.0.5'
+    implementation 'com.github.jitpack:gradle-simple:1.0.5'
+    //implementation 'com.github.innoviussoftware:webrtcTest:master-SNAPSHOT'
 }
